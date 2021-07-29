@@ -1,0 +1,288 @@
+/* Created by Abdul Hakim Ghaniy. 2021 */
+
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, body {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1366px;
+}
+
+.background {
+    background-image: url("assets/work-desk__dustin-lee.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: sepia() brightness(30%) hue-rotate(150deg) saturate(10);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.container {
+    width: 95vw;
+    max-width: 1366px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.cookie-notification {
+    position: sticky;
+    display: flex;
+    top: 0;
+    height: auto;
+    background-color: #e5e5e5;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookie-wrapper {
+    max-width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cookie-notification .btn {
+    background-color: #007bc1;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.cookie-notification p {
+    margin: 10px;
+    flex-basis: 85%;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.logo img{
+    height: 50px;
+}
+
+section.hero {
+    padding: 5% 0 10% 0;
+    color: white;
+}
+
+article.hero-shot {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 720px;
+}
+
+.hero-content-tagline {
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.hero-content p {
+    line-height: 25px;
+    font-size: 1.1em;
+}
+
+.hero-contact {
+    margin-top: 10px;
+}
+
+.btn {
+    border-radius: 2px;
+    border: 2px transparent solid;
+    font-size: 1em;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.hero-btn {
+    background-color: transparent;
+    border: 2px white solid;
+    padding: 12px;    
+    color: white;
+}
+
+.hero-btn:hover {
+    background-color: white;
+    color: #007bc1;
+}
+
+section.main {
+    background-color: #e5e5e5;
+    padding: 40px 0 40px 0;
+}
+
+.highlight-header {
+    margin: 0 auto 30px auto;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 720px;
+}
+
+.highlight-header h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.highlight-header p {
+    line-height: 25px;
+    font-size: 1.1em;
+}
+
+.highlight-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.service {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(187, 187, 187);
+    padding: 1%;
+    margin: 1%;
+}
+
+.service-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+
+.service-header .title {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.bi {
+    font-size: 1.5em;
+    color: grey;
+}
+
+footer {
+    height: 50px;
+    background-color: #004a75;
+    color: white;
+    text-align: center;
+}
+
+footer .container {
+    justify-content: center;
+}
+
+.newsletter-subscription {
+    border-radius: 2px;
+    height: auto;
+    padding: 20px;
+    width: auto;
+    max-width: 640px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #007bc1e8; 
+    color: white;
+}
+
+.newsletter-subscription .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.newsletter-wrapper h3, .newsletter-wrapper p {
+    margin-bottom: 10px;
+}
+
+.newsletter-wrapper h3 {
+    font-size: 1.5em;
+}
+
+.newsletter-email-input {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.newsletter-email-box {
+    border: transparent;
+    height: 30px;
+    flex-basis: 80%;
+    margin-top: 10px;
+
+}
+
+.newsletter-email-box:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.newsletter-email-button {
+    background-color: #cc6600;
+    color: white;
+    margin-top: 10px;
+
+}
+
+.newsletter-email-button:hover {
+    background-color: #ff8000;
+}
+
+@media screen and (max-width: 480px) {
+    .service {
+        flex-basis: 100%;
+        padding: 4%;
+        margin: 4%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .newsletter-email-box {
+        flex-basis: 100%;
+    }
+
+    .newsletter-email-button {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+    .service {
+        flex-basis: 40%;
+        padding: 2%;
+        margin: 2%
+    }
+}
